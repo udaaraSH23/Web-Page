@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <div></div>
     <h1>Movie survey</h1>
     <p>We are glad to hear from you</p>
     <form method="post" action="">
@@ -20,12 +21,12 @@
 
         </fieldset>
 <!-- For the Radio buttons -->
-        <fieldset><label for="daily" class="inline"><input type="radio" class="inline" name="daily" id="daily">Daily</label>
-            <label for="weekly" class="inline"><input type="radio" class="inline" name="weekly" id="weekly">Weekly</label>
-            <label for="monthly" class="inline"><input type="radio" class="inline" name="monthly" id="monthly">Monthly</label>
+        <fieldset><legend>How often Do You Watch Movies?</legend><label for="daily"><input type="radio" class="inline" name="freq" id="daily">Daily</label>
+            <label for="weekly"><input type="radio" class="inline" name="freq" id="weekly">Weekly</label>
+            <label for="monthly"><input type="radio" class="inline" name="freq" id="monthly">Monthly</label>
         </fieldset>
 <!-- For the Drop Down -->
-        <fieldset>
+        <fieldset><legend>What genere Do you Like Most</legend>
             <select name="" id="">
                 <option value="action">Action</option>
                 <option value="adventure">Adventure</option>
@@ -33,15 +34,20 @@
                 <option value="romance">Romance</option>
             </select>
             </fieldset>
-<!-- For the Radio buttons -->            
-            <fieldset></fieldset>
+<!-- For the Checkboxes -->            
+            <fieldset><legend>Where Do you watch Movies Usually</legend>
+                <label for="home"><input type="checkbox" class="inline" name="home" id="home">Home</label>
+                <label for="theater"><input type="checkbox" class="inline" name="theater" id="theater">Theater</label>
+                <label for="dvd"><input type="checkbox" class="inline" name="dvd" id="dvd">DVD-BlueRay</label>
+            </fieldset>
 <!-- For the Text Field --> 
-            <fieldset>
+            <fieldset><legend>Write a review about favourite Movie</legend>
             <textarea name="" id="" cols="30" rows="10" placeholder="How to feel">
             </textarea>
         </fieldset>
         <input type="submit" value="Submit">
     </form>
+   
 </body>
 <footer>Copyright to Udara shanuka senarath</footer>
 
