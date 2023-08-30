@@ -3,31 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" width="device-width" intial-scale="1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="Styles.css">
 </head>
 
 <body>
     <div></div>
-    <h1>Movie survey</h1>
-    <p>We are glad to hear from you</p>
-    <form method="post" action="">
+    <h1 id="title">Movie survey</h1>
+    <p id="description">We are glad to hear from you</p>
+    <form method="post" action="" id="survey-form">
  <!-- For the Text Fields -->       
         <fieldset>
-            <label for="first-name">Enter your First name <input type="text" id="first-name"></label>
-            <label for="last-name">Enter your Last name<input type="text" id="last-name"></label>
-            <label for="email">Enter your Email<input type="email" name="" id="email"></label>
-            <label for="country">Enter Your Country<input type="text" id="country"></label>
+            <label for="first-name" id="name-label">First name <input type="text" id="name" placeholder="Enter your First Name " required></label>
+            <label for="last-name" id="latname-label">Last name<input type="text" id="last-name" placeholder="Enter yout Last Name" required></label>
+            <label for="email" id="email-label">Email<input type="email" name="" id="email" placeholder="Enter Your Email" required></label>
+            <label for="age" id="number-label">Age<input type="number" id="number" placeholder="Enter your Age" min="0" max="100" required></label>
+            <label for="country" id="country-label">Country<input type="text" id="country" placeholder="Enter your Country" required></label>
 
         </fieldset>
 <!-- For the Radio buttons -->
-        <fieldset><legend>How often Do You Watch Movies?</legend><label for="daily"><input type="radio" class="inline" name="freq" id="daily">Daily</label>
-            <label for="weekly"><input type="radio" class="inline" name="freq" id="weekly">Weekly</label>
-            <label for="monthly"><input type="radio" class="inline" name="freq" id="monthly">Monthly</label>
+        <fieldset><legend>How often Do You Watch Movies?</legend>
+            <label for="daily"><input type="radio" class="inline" name="freq" value="Daily">Daily</label>
+            <label for="weekly"><input type="radio" class="inline" name="freq" value="Weekly">Weekly</label>
+            <label for="monthly"><input type="radio" class="inline" name="freq" value="Monthly">Monthly</label>
         </fieldset>
 <!-- For the Drop Down -->
         <fieldset><legend>What genere Do you Like Most</legend>
-            <select name="" id="">
+            <select name="dropdown" id="dropdown">
                 <option value="action">Action</option>
                 <option value="adventure">Adventure</option>
                 <option value="horror">Horror</option>
@@ -36,16 +38,16 @@
             </fieldset>
 <!-- For the Checkboxes -->            
             <fieldset><legend>Where Do you watch Movies Usually</legend>
-                <label for="home"><input type="checkbox" class="inline" name="home" id="home">Home</label>
-                <label for="theater"><input type="checkbox" class="inline" name="theater" id="theater">Theater</label>
-                <label for="dvd"><input type="checkbox" class="inline" name="dvd" id="dvd">DVD-BlueRay</label>
+                <label for="home"><input type="checkbox" class="inline" name="home" id="home" value="Home">Home</label>
+                <label for="theater"><input type="checkbox" class="inline" name="theater" id="theater" value="Theater">Theater</label>
+                <label for="dvd"><input type="checkbox" class="inline" name="dvd" id="dvd" value="DVD-BlueRay">DVD-BlueRay</label>
             </fieldset>
 <!-- For the Text Field --> 
             <fieldset><legend>Write a review about favourite Movie</legend>
-            <textarea name="" id="" cols="30" rows="10" placeholder="How to feel">
+            <textarea name="" id="" cols="30" rows="10" placeholder="How Do you feel?">
             </textarea>
         </fieldset>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submit">
     </form>
    
 </body>
